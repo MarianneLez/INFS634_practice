@@ -2,6 +2,8 @@
 <html>
      <head>
         <title>In-Class Exercise</title>
+        <link rel="stylesheet" href="assets/css/mystyle.css">
+
         <style>
             body {background-color: rgb(177, 115, 190)}
         </style>
@@ -11,9 +13,9 @@
      <body>
         <section id="header1">
             <a href="#header 3"> go to header 3</a>
-            <h1> heading 1 </h1>
+            <h1 style="color: rgb(95, 22, 29);"> heading 1 </h1>
             <h2> heading 2 </h2>
-            <h3> hading 3 </h3>
+            <h3 class="background-change-red"> heading 3 </h3>
             <h4> heading 4 </h4>
             <h5> heading 5 </h5>
             <h6> heading 6 </h6>
@@ -30,11 +32,48 @@
             another hello world
             <a href="#header 3"> go to header 3</a>
         </section>
-        <section>
+        <section class="color">
             <a href="http://www.mcgill.ca" target="_blank" title="click here to view Mcgill website">Link here </a>
+            <img src="assets/img/Logo.png" alt="sample image" width="400px" >
         </section>
+        <iframe src="assets/MarianneLezeau.pdf" title="inah website"></iframe>
         <section id="header 3">
             <a href="#header 1"> go to header 1</a>
+            <video muted controls autoplay>
+            <source src="https://www.youtube.com/watch?v=SuAC4WsZ-Dk"></video>
+        </section>
+        <section>
+            <table border="3px">
+                <tr> <!-- this is row 1-->
+                    <th>name</th>
+                    <th>dob</th>
+                    <th>country</th>
+                </tr>
+                <tr> <!-- this is row 2, i made box 1 of line 2 span 2 rows => takes over the first box of line 3-->
+                    <td rowspan="2"> hikari</td>
+                    <td>august 2020</td>
+                    <td>canada</td>
+                </tr>
+                <tr>
+                    <td>best of cats</td>
+                    <td>mexico</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <p></p><a href="www.mcgill.ca">Mcgill website</a>
+
+            <form method="GET" action="sample.html" autocomplete="on">
+                <label for="#firstnamebox">firstname</label>
+                <input id="firstnamebox" name="Fname" type="text" required>
+                <input type="submit" value="submit">
+            </form>
+            <form method="GET" action="#" autocomplete="on">
+                <label for="#colourbox">color</label>
+                <input id="colourbox" name="colour" type="color" required>
+                <input type="submit" value="submit">
+            </form>
         </section>
      </body>
 </html>
