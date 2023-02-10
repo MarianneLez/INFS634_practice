@@ -1,8 +1,34 @@
+
+
 body{
-    color:blueviolet
+    color:blueviolet;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1, h2, h5{
     color: aqua;
     background-color: darkred;
+    font-family: 'Times New Roman', Times, serif;
 }
-
+h3{
+    text-shadow: 7px 15px 7px green
+}
+a{
+  text-decoration: none;
+  background-color: blanchedalmond;  
+}
+a:hover {
+    color: green
+}
+a {
+    background-color: whitesmoke;
+    color: aquamarine;
+    padding: px 25px;
+    text-align: center;
+    display: inline-block;
+}
+@media (min-height: 576px) {
+    body {
+        background-color: lightblue;
+    }
+}
